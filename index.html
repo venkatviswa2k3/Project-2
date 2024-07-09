@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="div1">
+            <p class="num1">Enter first number:<input class="field" id="f1" type="number" value="0"></p>
+            <p class="num2">Enter second number:<input class = "field" id="f2" type="number" value="0"></p>
+            <button id="butt" onclick="add()">Add</button>
+            <p id="sum"></p>
+        </div>
+    </body>
+    <script>
+        var x = document.getElementById("f1");
+        var y = document.getElementById("f2");
+        var tot = 0;
+        function add() {
+            tot = parseInt(x.value) + parseInt(y.value);
+            document.getElementById("sum").innerHTML = "SUM = " + tot;
+        }
+        
+    </script>
+</html>
